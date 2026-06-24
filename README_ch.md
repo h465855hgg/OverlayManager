@@ -1,6 +1,6 @@
 # OverlayManager (分支维护版)
 
-🌐 **语言切换**：[English](./README.md) | [中文](./README_ch.md)
+> **语言切换**：[English](./README.md) | [中文](./README_ch.md)
 
 此项目是 [zacharee/OverlayManager](https://github.com/zacharee/OverlayManager) 的一个维护分支。
 

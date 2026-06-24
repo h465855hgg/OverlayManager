@@ -1,6 +1,6 @@
 # OverlayManager (Branch Maintenance Edition)
 
-> 🇨🇳 [中文版本](./README_ch.md) | 📖 [English Version](./README.md)
+> 🇨🇳 [中文版本](./README_ch.md) | [English Version](./README.md)
 
 This project is a maintenance fork of [zacharee/OverlayManager](https://github.com/zacharee/OverlayManager).
 
