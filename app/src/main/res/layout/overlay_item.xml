@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:selectableItemBackground"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/overlay_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="?android:textColorPrimary"
+            android:breakStrategy="simple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="com.android.systemui.tk.zwander.oneuituner.overlay.qs"
+            />
+
+        <LinearLayout
+            android:id="@+id/info_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/overlay_package">
+
+            <TextView
+                android:id="@+id/priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Priority: 2"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?listPreferredItemHeightSmall"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/info_wrapper">
+
+            <io.github.h465855hgg.overlay_manager.views.TooltippedImageButton
+                android:id="@+id/set_highest_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/highest_priority_selector"
+                android:background="?android:selectableItemBackground"
+                android:tooltipText="@string/set_highest_priority"
+                android:contentDescription="@string/set_highest_priority"
+                />
+
+            <io.github.h465855hgg.overlay_manager.views.TooltippedImageButton
+                android:id="@+id/set_lowest_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/lowest_priority_selector"
+                android:background="?android:selectableItemBackground"
+                android:tooltipText="@string/set_lowest_priority"
+                android:contentDescription="@string/set_lowest_priority"
+                />
+
+            <io.github.h465855hgg.overlay_manager.views.CheckableImageButton
+                android:id="@+id/enabled"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_weight="1"
+                android:tooltipText="@string/enabled"
+                android:contentDescription="@string/enabled"
+                android:background="?android:selectableItemBackground"
+                android:src="?android:attr/listChoiceIndicatorMultiple"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">OverlayManager</string>
+
+    <string name="enabled">Enabled</string>
+    <string name="overlay_count">Overlays: %d</string>
+    <string name="priority">Priority: %d</string>
+    <string name="match_overlays">Match Overlays</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="unapplied_changes">Unapplied Changes</string>
+
+    <string name="unapplied_changes_desc">You have unapplied changes! Hit the checkmark FAB to apply them.</string>
+    <string name="apply_overlays_desc">Are you sure you want to apply?</string>
+
+    <string name="enable_all">Enable All</string>
+    <string name="disable_all">Disable All</string>
+    <string name="expand_all">Expand All</string>
+    <string name="collapse_all">Collapse All</string>
+
+    <string name="set_highest_priority">Set Highest Priority</string>
+    <string name="set_lowest_priority">Set Lowest Priority</string>
+
+    <string name="shizuku_root_required_title">Root Access or Shizuku Required</string>
+    <string name="shizuku_root_required_msg">To use Overlay Manager, you must have root access or have Shizuku set up and running.</string>
+    <string name="shizuku_root_get_shizuku">Get Shizuku</string>
+</resources>
